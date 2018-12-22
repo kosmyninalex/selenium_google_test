@@ -6,8 +6,11 @@ import pages.GoogleResultsPage;
 import org.testng.Assert;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class GoogleHomeTest extends BaseTest {
+    String valueToSearch = "yandex.ru";
+
     @Test (priority = 0)
 
     public void searchTestGoogleHomePage ()
@@ -15,7 +18,7 @@ public class GoogleHomeTest extends BaseTest {
         GoogleHomePage googleHomePage = new GoogleHomePage(driver);
 
         googleHomePage.goToGoogleHomePage();
-        googleHomePage.GoogleSendTextToInput("yandex.ru");
+        googleHomePage.GoogleSendTextToInput(valueToSearch);
         googleHomePage.searchGoogleForInput();
     }
 
@@ -23,8 +26,10 @@ public class GoogleHomeTest extends BaseTest {
     public void checkResultingPage ()
     {
         GoogleResultsPage googleResultsPage = new GoogleResultsPage(driver);
-        String s = googleResultsPage.firstReferenceInResults("yandex.ru");
-        assertEquals ("yandx.ru",googleResultsPage.firstReferenceInResults("yandex.ru"));
+        String resHref = googleResultsPage.firstReferenceInResults(valueToSearch);
+
+        assertTrue(resHref.endsWith("yandex.ru"));
+       // assertEquals(resHref, "yande.xru");
     }
 
 }

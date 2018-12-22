@@ -10,7 +10,9 @@ public class GoogleResultsPage extends BasePage {
 
     public String firstReferenceInResults (String searchVal)
     {
-        return driver.findElement(By.xpath("//*[@class=\"r\"]/a")).getText();
+       // String href = element.getAttribute("href");
+      //  return driver.findElement(By.xpath("//*[@class=\"r\"]/a")).getText();
+        return driver.findElement(By.xpath("//*[@class=\"r\"]/a")).getAttribute("href");
     }
 
 }
