@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="10011" started-at="2018-12-23T09:44:37Z" finished-at="2018-12-23T09:44:47Z">
+  <suite name="Surefire suite" duration-ms="10892" started-at="2018-12-23T12:11:23Z" finished-at="2018-12-23T12:11:34Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="10011" started-at="2018-12-23T09:44:37Z" finished-at="2018-12-23T09:44:47Z">
+    <test name="Surefire test" duration-ms="10892" started-at="2018-12-23T12:11:23Z" finished-at="2018-12-23T12:11:34Z">
       <class name="test.GoogleResultsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="setup" is-config="true" duration-ms="4926" started-at="2018-12-23T09:44:37Z" finished-at="2018-12-23T09:44:42Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="setup" is-config="true" duration-ms="5757" started-at="2018-12-23T12:11:23Z" finished-at="2018-12-23T12:11:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchTestGoogleHomePage()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="searchTestGoogleHomePage" duration-ms="4270" started-at="2018-12-23T09:44:42Z" finished-at="2018-12-23T09:44:47Z">
+        <test-method status="PASS" signature="searchTestGoogleHomePage()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="searchTestGoogleHomePage" duration-ms="4401" started-at="2018-12-23T12:11:29Z" finished-at="2018-12-23T12:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTestGoogleHomePage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="teardown" is-config="true" duration-ms="783" started-at="2018-12-23T09:44:47Z" finished-at="2018-12-23T09:44:47Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.GoogleResultsTest@60addb54]" name="teardown" is-config="true" duration-ms="719" started-at="2018-12-23T12:11:33Z" finished-at="2018-12-23T12:11:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
