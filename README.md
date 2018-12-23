@@ -16,7 +16,7 @@ The code performs the following steps:
 4. Download the project sources to your machine and move it to any suitable directory'
 
 ### Running Test
-1. in CMD: Execute "cd [project directory folder path]" command
-2. in CMD: Execute "mvn test" command
+1. in Windows cmd: Execute "cd [project directory folder path]" command
+2. in Windows cmd: Execute "mvn test" command
 
 in case the test ran successfully you will see one succeded result in maven's cmd interface
