@@ -1,6 +1,6 @@
 # Selenium WebDriver sample.
 The code performs the following steps:
-1. Open Chrome browser;
+1. Opens Chrome browser;
 2. Navigates to "https://google.com";
 3. Searches for "yandex.ru"
 4. Validates that first search results meets the following criteria:
