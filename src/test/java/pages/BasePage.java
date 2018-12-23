@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+//BasePage is a class that contains common methods used for all pages classes
 public class BasePage {
     public WebDriver driver;
     public WebDriverWait wait;
@@ -15,6 +16,7 @@ public class BasePage {
         wait = new WebDriverWait(driver, 15);
     }
 
+    // wait wrapper method
     public void waitVisibility (By elementBy)
     {
         wait.until(ExpectedConditions.visibilityOfElementLocated(elementBy));
@@ -32,15 +34,10 @@ public class BasePage {
         driver.findElement(elementBy).sendKeys(text);
     }
 
-    public String readText (By elementBy)
+    public String getHyperlink (By elementBy)
     {
         waitVisibility(elementBy);
-        return driver.findElement(elementBy).getText();
+        return driver.findElement(elementBy).getAttribute("href");
     }
 
-   /* public void assertEquals (By elementBy, String expectedText)
-    {
-        waitVisibility(elementBy);
-        AssertTrue
-    }*/
 }

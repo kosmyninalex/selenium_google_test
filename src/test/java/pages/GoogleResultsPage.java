@@ -8,11 +8,13 @@ public class GoogleResultsPage extends BasePage {
         super(driver);
     }
 
-    public String firstReferenceInResults (String searchVal)
+    // Receiving the location of the first non-advert google results page webelement
+    By firstElementsLinkInGoogleSearch = By.xpath("//*[@class=\"r\"]/a");
+
+    // method for getting the non-advert hyperlink in Google search results
+    public String getFirstReferenceInResults ()
     {
-       // String href = element.getAttribute("href");
-      //  return driver.findElement(By.xpath("//*[@class=\"r\"]/a")).getText();
-        return driver.findElement(By.xpath("//*[@class=\"r\"]/a")).getAttribute("href");
+        return getHyperlink(firstElementsLinkInGoogleSearch);
     }
 
 }

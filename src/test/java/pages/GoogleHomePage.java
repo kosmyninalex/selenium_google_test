@@ -8,8 +8,13 @@ public class GoogleHomePage extends BasePage {
         super(driver);
     }
 
+
     String baseURL = "https://google.com";
+
+    //location of Google Search button
     By searchGoogleButtonBy = By.name("btnK");
+
+    //location of Google input field
     By searchGoogleInput = By.name("q");
 
     public GoogleHomePage goToGoogleHomePage ()
@@ -18,7 +23,7 @@ public class GoogleHomePage extends BasePage {
         return this;
     }
 
-    public void GoogleSendTextToInput (String text)
+    public void sendTextToGoogleInput (String text)
     {
         writeText(searchGoogleInput, text);
     }
